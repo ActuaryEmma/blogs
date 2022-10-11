@@ -1,9 +1,12 @@
-function Home() {
-    return (  
-        <div>
-            Home
-        </div>
-    );
-}
+
+    function Home() {
+        return (
+          <>
+            <NavBar />
+            <Cards />
+            <Footer />
+          </>
+        );
+      }
  
 export default Home;
