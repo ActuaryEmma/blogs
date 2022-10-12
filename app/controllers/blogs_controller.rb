@@ -1,9 +1,15 @@
 class BlogsController < ApplicationController
 
   def index
-    blogs = blog.all
-    render json: Blogs, status: :ok
+    blogs = Blog.all
+    render json: blogs, status: :ok
   end
+
+  def show
+    blogs = Blog.find(params[:id])
+    render json: blogs, status: :ok
+  end
+
 
   
 
