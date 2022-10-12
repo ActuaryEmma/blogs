@@ -2,10 +2,10 @@ Rails.application.routes.draw do
   
 
 
-  resources :blogs
-  resources :comments
-  resources :users
+  resources :comments, only: [:index, :create, :update, :destroy]
+  resources :blogs, only: [:index, :show]
+  resources :users, only: [:index]
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
-  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
+
 end
