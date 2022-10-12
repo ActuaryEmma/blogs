@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-    #show all blogs'
+    #show all users'
     def index
-            render json: Blog.all, status: :ok 
+        users = User.all
+        render json: users, status: :ok
     end
 end  

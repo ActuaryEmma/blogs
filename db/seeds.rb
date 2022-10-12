@@ -2,14 +2,14 @@ puts "Seeding data!"
 
 
 #user instance
-User.create(username: "Mike Butler", email: "mike@example.com", password: "someone")
-User.create(username: "Kamau Mwangi", email: "kamaus@example.com", password: "manabadman")
-User.create(username: "Doreen Garcia", email: "dorgarcia@example.com", password: "dobetter")
+User.create(username: "Mike Butler", email: "mike@example.com", password_digest: "someone")
+User.create(username: "Kamau Mwangi", email: "kamaus@example.com", password_digest: "manabadman")
+User.create(username: "Doreen Garcia", email: "dorgarcia@example.com", password_digest: "dobetter")
 
 #comments instance
-Comment.create(user_id:1, blog_id:2)
-Comment.create(user_id:2, blog_id:3)
-Comment.create(user_id:3, blog_id:1)
+Comment.create(comments: "had mad fun", user_id:1, blog_id:2)
+Comment.create(comments: "Enjoyed my stay", user_id:2, blog_id:3)
+Comment.create(comments: "Wish I stayed longer", user_id:3, blog_id:1)
 
 #blog instance
 Blog.create(title: "Serengeti Plains", description: "Serengeti National Park is a World Heritage Site teeming with wildlife: over 2 million ungulates, 4000 lions, 1000 leopard, 550 cheetahs and some 500 bird species inhabit an area close to 15,000 square kilometers in size.")
