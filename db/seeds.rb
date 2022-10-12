@@ -1,3 +1,6 @@
+puts "Seeding data!"
+
+
 #user instance
 User.create(name: "Mike Butler", email: "mike@example.com", password: "someone")
 User.create(name: "Kamau Mwangi", email: "kamaus@example.com", password: "manabadman")
@@ -14,3 +17,4 @@ Blog.create(title: "Maasai Mara Scenery", description: "Maasai Mara National Res
 Blog.create(title: "Mount Kenya", description: "Climbing to 5,199 meters, Mount Kenya is the second tallest mountain in Africa. The scenery surrounding this designated World Heritage Site is breath-taking. It is pristine wilderness with lakes, tarns, glaciers, dense forest, mineral springs and a selection of rare and endangered species of animals, high altitude adapted plains game and unique montane and alpine vegetation")
 Blog.create(tittle: "Diani Beach", description: "Diani Campsite and Cottages offers comfortable accommodation for budget travellers, situated in Diani and only a stone’s throw from the beach. It is close to many shopping outlets and restaurants.There are a variety of cottages available with different bed configurations, of which some have kitchens.")
 
+puts "Done!"
